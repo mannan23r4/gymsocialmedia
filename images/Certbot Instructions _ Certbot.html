@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://certbot.eff.org/instructions?ws=apache&os=ubuntufocal -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="https://certbot.eff.org/favicon.ico" type="image/x-icon">
+
+    <link href="https://certbot.eff.org/instructions" rel="alternate" hreflang="en">
+    <link href="https://certbot.eff.org/es/instructions" rel="alternate" hreflang="es">
+    <link href="https://certbot.eff.org/pt-br/instructions" rel="alternate" hreflang="pt-br">
+    <link href="https://certbot.eff.org/ar/instructions" rel="alternate" hreflang="ar">
+    <link href="https://certbot.eff.org/fa/instructions" rel="alternate" hreflang="fa">
+    <link href="https://certbot.eff.org/fr/instructions" rel="alternate" hreflang="fr">
+    <link href="https://certbot.eff.org/tr/instructions" rel="alternate" hreflang="tr">
+    <link href="https://certbot.eff.org/ru/instructions" rel="alternate" hreflang="ru">
+    <link href="https://certbot.eff.org/zh-hans/instructions" rel="alternate" hreflang="zh-hans">
+    <link href="https://certbot.eff.org/my/instructions" rel="alternate" hreflang="my">
+    <link href="https://certbot.eff.org/vi/instructions" rel="alternate" hreflang="vi">
+    <link href="https://certbot.eff.org/am/instructions" rel="alternate" hreflang="am">
+    <link href="https://certbot.eff.org/th/instructions" rel="alternate" hreflang="th">
+    <link href="https://certbot.eff.org/ur/instructions" rel="alternate" hreflang="ur">
+    <link href="https://certbot.eff.org/ps/instructions" rel="alternate" hreflang="ps">
+
+  <link rel="publisher" href="https://www.eff.org/">
+
+  <meta property="og:url" content="https://certbot.eff.org/instructions?ws=apache&amp;os=ubuntufocal"><meta property="og:title" content="Certbot Instructions"><meta property="og:type" content="website"><meta property="og:url" content="https://certbot.eff.org/instructions?ws=apache&amp;os=ubuntufocal"><meta property="og:image"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="600"><meta property="og:description" content="Tagline"><meta property="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@eff"><meta name="twitter:creator" content="@eff">
+
+  <title>Certbot Instructions | Certbot</title>
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="PrNR4p436L05On2Se6UxtAhQDar81e4n5kLU8oa5N4Gbpjf+74ItCy4YR7flloFrmbngiJymK1i9FQhhHparOw==">
+  
+
+  <link rel="stylesheet" media="all" href="./Certbot Instructions _ Certbot_files/application-ee8b43e4b1534407827ed431b83535d3a43434dec5e7526def9b6e1ba2f0a1b4.css">
+
+</head>
+<body class="instruction_sets-section show-action" lang="en">
+  <a href="https://certbot.eff.org/instructions?ws=apache&amp;os=ubuntufocal#main-content" class="sr-only">Skip to main content</a>
+
+  
+  <div class="top-bar">
+  <div class="logo-banner">
+    <div class="logo">
+      <a href="https://eff.org/">
+        <img alt="EFF" src="./Certbot Instructions _ Certbot_files/EFF-logo-plain-2c78e2be591c772b23473620f7a56a753950d2d7e1ad27e3f2290b079f480f2a.svg">
+      </a>
+    </div>
+    <div class="eff-tagline">
+      <span>a project of the Electronic Frontier Foundation</span>
+    </div>
+  </div>
+  <div class="lang-switcher">
+    <ul>
+        <li>
+          <a href="https://certbot.eff.org/instructions">EN</a>
+        </li>
+        <li>
+          <a href="https://certbot.eff.org/fa/instructions">فارسی </a>
+        </li>
+    </ul>
+  </div>
+</div>
+
+  <nav class="main-nav">
+  <div class="logo">
+    <a href="https://certbot.eff.org/"><img alt="Certbot logo, a robot holding a key" src="./Certbot Instructions _ Certbot_files/certbot-logo-1A-6d3526936bd519275528105555f03904956c040da2be6ee981ef4777389a4cd2.svg"></a>
+  </div>
+
+  <ul>
+    <li class="mobile-hidden"><a href="https://certbot.eff.org/instructions">certbot instructions</a></li>
+    <li class="mobile-hidden"><a href="https://certbot.eff.org/pages/about">about certbot</a></li>
+    <li class="mobile-hidden"><a href="https://certbot.eff.org/pages/contribute">contribute to certbot</a></li>
+    <li class="mobile-hidden"><a href="https://certbot.eff.org/hosting_providers">hosting providers with HTTPS</a></li>
+    <li class="mobile-hidden"><a href="https://certbot.eff.org/pages/help">get help</a></li>
+    <li class="donate mobile-hidden"><a target="_blank" href="https://supporters.eff.org/donate/support-work-on-certbot">donate</a></li>
+    <li class="donate mobile-only"><a target="_blank" href="https://supporters.eff.org/donate/support-work-on-certbot">donate to EFF</a></li>
+    <li id="hamburger">≡</li>
+  </ul>
+</nav>
+
+<div id="shelf">
+  <ul>
+    <li><a href="https://certbot.eff.org/">home</a></li>
+    <li><a href="https://certbot.eff.org/instructions">certbot instructions</a></li>
+    <li><a href="https://certbot.eff.org/pages/about">about certbot</a></li>
+    <li><a href="https://certbot.eff.org/pages/contribute">contribute to certbot</a></li>
+    <li><a href="https://certbot.eff.org/hosting_providers">hosting providers with HTTPS</a></li>
+    <li><a href="https://certbot.eff.org/pages/help">get help</a></li>
+    <li><a href="https://supporters.eff.org/donate/support-work-on-certbot">donate</a></li>
+    <li id="close">×</li>
+  </ul>
+</div>
+
+
+  <div id="main-content">
+    <h1>Certbot Instructions</h1>
+
+<div class="hero">
+  <div class="instruction-widget">
+  <div class="form-wrapper">
+    <h1 class="mobile-only">
+      What's your HTTP website running on?
+    </h1>
+    <form action="https://certbot.eff.org/instructions" accept-charset="UTF-8" data-remote="true" method="get">
+      <span>My HTTP website is running</span>
+      <select name="ws" id="ws"><option value="">Software</option><option selected="selected" value="apache">Apache</option>
+<option value="nginx">Nginx</option>
+<option value="haproxy">HAProxy</option>
+<option value="plesk">Plesk</option>
+<option value="other">Other</option>
+<option value="webproduct">Web Hosting Product</option></select>
+      <span>on</span>
+      <select name="os" id="os"><option value="">System</option><option value="bitnami">Bitnami</option>
+<option value="pip">Pip</option>
+<option value="gentoo">Gentoo</option>
+<option value="fedora">Fedora</option>
+<option value="freebsd">FreeBSD</option>
+<option value="windows">Windows</option>
+<option value="snap">Snapd</option>
+<option value="debianstretch">Debian 9</option>
+<option value="debianbuster">Debian 10</option>
+<option value="debiantesting">Debian Testing</option>
+<option selected="selected" value="ubuntufocal">Ubuntu 20</option>
+<option value="ubuntuother">Ubuntu 19</option>
+<option value="ubuntubionic">Ubuntu 18</option>
+<option value="ubuntuxenial">Ubuntu 16</option>
+<option value="arch">Arch Linux</option>
+<option value="centosrhel8">CentOS 8</option>
+<option value="centosrhel7">CentOS 7</option>
+<option value="opbsd6">OpenBSD</option>
+<option value="osx">macOS</option>
+<option value="devuanascii">Devuan 2.0</option>
+<option value="devuanbeowulf">Devuan 3.0</option>
+<option value="devuanother">Devuan Testing</option>
+<option value="tumbleweed">openSUSE tumbleweed</option>
+<option value="leap">openSUSE 15</option>
+<option value="sharedhost">Web Hosting Service</option></select>
+      
+      
+</form>    <div class="not-sure">
+      <a href="https://certbot.eff.org/pages/help">Help, I'm not sure!</a>
+    </div>
+  </div>
+</div>
+
+</div>
+  <div class="page-content">
+    <div class="wrapper">
+      <div class="instructions-content">
+        <h2 id="instructions-header">Apache on Ubuntu 20</h2>
+        <div class="tab automated js-only active" style="visibility: visible;">default</div>
+        <div class="tab advanced js-only " style="visibility: visible;">wildcard</div>
+        
+        
+        <div class="instruction-pane-wrapper">
+          <div class="use-certbot">
+  <h1> To use Certbot, you'll need... </h1>
+  <div class="three-col reqs">
+    <div class="col">
+  <img alt="A laptop" src="./Certbot Instructions _ Certbot_files/Computer-87ace26b66df411ab1ce8441a6f308ae4c75e8e50d2d36c586b8daa3136b5e37.svg">
+  <div class="text-wrapper hanging-indent">
+    <span>
+      comfort with the
+      <div class="glossary-term js-only" style="visibility: visible;">
+  <a class="glossary-link js">command line</a>
+  <div class="tooltip js">
+    <div class="close-button"><img alt="Close button" class="close-tooltip" src="./Certbot Instructions _ Certbot_files/close-d50a57de0821395c65cd8330305a71fa397a0a8dc4eaed6aa367ae13eca315d8.svg"></div>
+    <div class="tooltip-title">
+      <a href="https://certbot.eff.org/glossary#command-line">Command Line</a>
+    </div>
+    <div class="mobile-hidden">
+      <p>A command line is a way of interacting with a computer by typing text-based commands to it and receiving text-based replies. 
+Certbot is run from a command-line interface, usually on a Unix-like server. In order to use Certbot for most purposes, you’ll need to be able to install and run it on the command line of your web server, which is usually accessed over SSH.</p>
+
+    </div>
+    <div class="mobile-only">
+      <p>A command line is a way of interacting with a computer by typing text-based commands to it and recei...</p>
+    </div>
+    <div class="bottom-text">
+      <a href="https://certbot.eff.org/glossary">From our Certbot Glossary</a>
+    </div>
+  </div>
+</div>
+
+
+    </span>
+  </div>
+</div>
+<div class="col">
+  <img alt="Web browser showing an HTTP site" src="./Certbot Instructions _ Certbot_files/HTTPsite-0a53cab432a901c41942210ad391832751114fe1753e181865aa7775c01f5528.svg">
+  <div class="text-wrapper hanging-indent">
+    <span>
+      ...and an
+      <div class="glossary-term js-only" style="visibility: visible;">
+  <a class="glossary-link js">HTTP website</a>
+  <div class="tooltip js">
+    <div class="close-button"><img alt="Close button" class="close-tooltip" src="./Certbot Instructions _ Certbot_files/close-d50a57de0821395c65cd8330305a71fa397a0a8dc4eaed6aa367ae13eca315d8.svg"></div>
+    <div class="tooltip-title">
+      <a href="https://certbot.eff.org/glossary#http">HTTP</a>
+    </div>
+    <div class="mobile-hidden">
+      <p>HTTP (Hypertext Transfer Protocol) is the traditional, but insecure, method for web browsers to request the content of web pages and other online resources from web servers. It is an Internet standard and normally used with TCP port 80. 
+Almost all websites in the world support HTTP, but websites that have been configured with Certbot or some other method of setting up HTTPS may automatically redirect users from the HTTP version of the site to the HTTPS version.</p>
+
+    </div>
+    <div class="mobile-only">
+      <p>HTTP (Hypertext Transfer Protocol) is the traditional, but insecure, method for web browsers to requ...</p>
+    </div>
+    <div class="bottom-text">
+      <a href="https://certbot.eff.org/glossary">From our Certbot Glossary</a>
+    </div>
+  </div>
+</div>
+
+
+      <br>
+      that is
+      <div class="glossary-term js-only" style="visibility: visible;">
+  <a class="glossary-link js">already online</a>
+  <div class="tooltip js">
+    <div class="close-button"><img alt="Close button" class="close-tooltip" src="./Certbot Instructions _ Certbot_files/close-d50a57de0821395c65cd8330305a71fa397a0a8dc4eaed6aa367ae13eca315d8.svg"></div>
+    <div class="tooltip-title">
+      <a href="https://certbot.eff.org/glossary#website-thats-already-online">Website That’s Already Online</a>
+    </div>
+    <div class="mobile-hidden">
+      <p>Certbot is usually meant to be used to switch an existing HTTP site to work in HTTPS (and, afterward, to continue renewing the site’s HTTPS certificates whenever necessary). Some Certbot documentation assumes or recommends that you have a working web site that can already be accessed using HTTP on port 80. That means, for example, that if you use a web browser to go to your domain using http://, your web server answers and some kind of content comes up (even if it’s just a default welcome page rather than the final version of your site). Some methods of using Certbot have this as a prerequisite, so you’ll have a smoother experience if you already have a site set up with HTTP. (If your site can’t be accessed this way as a matter of policy, you’ll probably need to use DNS validation in order to get a certificate with Certbot.)</p>
+
+    </div>
+    <div class="mobile-only">
+      <p>Certbot is usually meant to be used to switch an existing HTTP site to work in HTTPS (and, afterward...</p>
+    </div>
+    <div class="bottom-text">
+      <a href="https://certbot.eff.org/glossary">From our Certbot Glossary</a>
+    </div>
+  </div>
+</div>
+
+
+      <br>
+      with an open
+      <div class="glossary-term js-only" style="visibility: visible;">
+  <a class="glossary-link js">port 80</a>
+  <div class="tooltip js">
+    <div class="close-button"><img alt="Close button" class="close-tooltip" src="./Certbot Instructions _ Certbot_files/close-d50a57de0821395c65cd8330305a71fa397a0a8dc4eaed6aa367ae13eca315d8.svg"></div>
+    <div class="tooltip-title">
+      <a href="https://certbot.eff.org/glossary#port-80">Port 80</a>
+    </div>
+    <div class="mobile-hidden">
+      <p>Different Internet services are distinguished by using different TCP port numbers. Unencrypted HTTP normally uses TCP port 80, while encrypted HTTPS normally uses TCP port 443. 
+To use certbot --webroot, certbot --apache, or certbot --nginx, you should have an existing HTTP website that’s already online hosted on the server where you’re going to use Certbot. This site should be available to the rest of the Internet on port 80. To use certbot --standalone, you don’t need an existing site, but you have to make sure connections to port 80 on your server are not blocked by a firewall, including a firewall that may be run by your Internet service provider or web hosting provider. Please check with your ISP or hosting provider if you’re not sure. (Using DNS validation does not require Let’s Encrypt to make any inbound connection to your server, so with this method in particular it’s not necessary to have an existing HTTP website or the ability to receive connections on port 80.)</p>
+
+    </div>
+    <div class="mobile-only">
+      <p>Different Internet services are distinguished by using different TCP port numbers. Unencrypted HTTP ...</p>
+    </div>
+    <div class="bottom-text">
+      <a href="https://certbot.eff.org/glossary">From our Certbot Glossary</a>
+    </div>
+  </div>
+</div>
+
+
+    </span>
+  </div>
+</div>
+<div class="col">
+  <img alt="A server" src="./Certbot Instructions _ Certbot_files/Server-db228227c3b6c122a0625459ef701172647ee5e27d2d54975f15ef7211a4da9e.svg">
+  <div class="text-wrapper hanging-indent">
+    <span>
+      ...which is hosted on a
+      <div class="glossary-term js-only" style="visibility: visible;">
+  <a class="glossary-link js">server</a>
+  <div class="tooltip js">
+    <div class="close-button"><img alt="Close button" class="close-tooltip" src="./Certbot Instructions _ Certbot_files/close-d50a57de0821395c65cd8330305a71fa397a0a8dc4eaed6aa367ae13eca315d8.svg"></div>
+    <div class="tooltip-title">
+      <a href="https://certbot.eff.org/glossary#server">Server</a>
+    </div>
+    <div class="mobile-hidden">
+      <p>A server is a computer on the Internet that provides a service, like a web site or an email service. Most web site owners pay a hosting provider for the use of a server located in a data center and administered over the Internet. This might be a physical dedicated server, a virtual private server (VPS), or a shared server. Other servers provide other parts of the Internet infrastructure, such as DNS servers.</p>
+
+    </div>
+    <div class="mobile-only">
+      <p>A server is a computer on the Internet that provides a service, like a web site or an email service....</p>
+    </div>
+    <div class="bottom-text">
+      <a href="https://certbot.eff.org/glossary">From our Certbot Glossary</a>
+    </div>
+  </div>
+</div>
+
+
+      <br>
+      which you can access via
+      <div class="glossary-term js-only" style="visibility: visible;">
+  <a class="glossary-link js">ssh</a>
+  <div class="tooltip js">
+    <div class="close-button"><img alt="Close button" class="close-tooltip" src="./Certbot Instructions _ Certbot_files/close-d50a57de0821395c65cd8330305a71fa397a0a8dc4eaed6aa367ae13eca315d8.svg"></div>
+    <div class="tooltip-title">
+      <a href="https://certbot.eff.org/glossary#ssh">SSH</a>
+    </div>
+    <div class="mobile-hidden">
+      <p>SSH (which stands for “secure shell”) is a technology for connecting to a remote server and accessing a command line on that server, often in order to administer it. The administrator of a server can grant SSH access to others, and can also use SSH access directly in order to administer the server remotely. SSH is usually used to access servers running Unix-like operating systems, but your own computer doesn’t have to be running Unix in order to use SSH. You normally use SSH from your computer’s command line in a terminal by typing a command such as ssh <a href="mailto:username@example.com">username@example.com</a>, especially if your own computer runs Linux or macOS. After logging in, you’ll have access to the server’s command line. If you use Windows on your computer, you might also use a dedicated SSH application such as PuTTY. 
+Most Certbot users run Certbot from a command prompt on a remote server over SSH.</p>
+
+    </div>
+    <div class="mobile-only">
+      <p>SSH (which stands for “secure shell”) is a technology for connecting to a remote server and accessin...</p>
+    </div>
+    <div class="bottom-text">
+      <a href="https://certbot.eff.org/glossary">From our Certbot Glossary</a>
+    </div>
+  </div>
+</div>
+
+
+      <br>
+      with the ability to
+      <div class="glossary-term js-only" style="visibility: visible;">
+  <a class="glossary-link js">sudo</a>
+  <div class="tooltip js">
+    <div class="close-button"><img alt="Close button" class="close-tooltip" src="./Certbot Instructions _ Certbot_files/close-d50a57de0821395c65cd8330305a71fa397a0a8dc4eaed6aa367ae13eca315d8.svg"></div>
+    <div class="tooltip-title">
+      <a href="https://certbot.eff.org/glossary#sudo">sudo</a>
+    </div>
+    <div class="mobile-hidden">
+      <p>Sudo is the most common command on Unix-like operating systems to run a specific command as root (the system administrator). 
+If you’re logged in to your server as a user other than root, you’ll likely need to put sudo before your Certbot commands so that they run as root (for example, sudo certbot instead of just certbot), especially if you’re using Certbot’s integration with a web server like Apache or Nginx. (The certbot-auto script automatically runs sudo if it’s necessary and you didn’t specify it.)</p>
+
+    </div>
+    <div class="mobile-only">
+      <p>Sudo is the most common command on Unix-like operating systems to run a specific command as root (th...</p>
+    </div>
+    <div class="bottom-text">
+      <a href="https://certbot.eff.org/glossary">From our Certbot Glossary</a>
+    </div>
+  </div>
+</div>
+
+
+      <br>
+    </span>
+    <span class="italic">
+      optional if you want a
+      <div class="glossary-term js-only" style="visibility: visible;">
+  <a class="glossary-link js">wildcard cert</a>
+  <div class="tooltip js">
+    <div class="close-button"><img alt="Close button" class="close-tooltip" src="./Certbot Instructions _ Certbot_files/close-d50a57de0821395c65cd8330305a71fa397a0a8dc4eaed6aa367ae13eca315d8.svg"></div>
+    <div class="tooltip-title">
+      <a href="https://certbot.eff.org/glossary#wildcard-certificate">Wildcard Certificate</a>
+    </div>
+    <div class="mobile-hidden">
+      <p>A wildcard certificate is a certificate that includes one or more names starting with <code>*.</code>. Browsers will accept any label in place of the asterisk (<code>*</code>). For example, a certificate for <code>*.example.com</code> will be valid for <code>www.example.com</code>, <code>mail.example.com</code>, <code>hello.example.com</code>, and <code>goodbye.example.com</code>.</p>
+
+<p>However, a wildcard certificate including <em>only</em> the name <code>*.example.com</code> will <strong>not</strong> be valid for <code>example.com</code>: the substituted label can not be empty. If you want the certificate to be valid for <code>example.com</code>, you also need to include <code>example.com</code> (i.e. without the <code>*.</code> part) on the certificate.</p>
+
+<p>Additionally, the asterisk can only be substituted by a <em>single</em> label and not by <em>multiple</em> labels. For example, the name <code>hello.goodbye.example.com</code> will not be covered by a certificate including only the name <code>*.example.com</code>. It <em>will</em> be covered however, by <code>*.goodbye.example.com</code>. Note that a wildcard name can not contain multiple asterisks. For example, <code>*.*.example.com</code> is not valid.</p>
+
+    </div>
+    <div class="mobile-only">
+      <p>A wildcard certificate is a certificate that includes one or more names starting with <code>*.</code>. Browsers w...</p>
+    </div>
+    <div class="bottom-text">
+      <a href="https://certbot.eff.org/glossary">From our Certbot Glossary</a>
+    </div>
+  </div>
+</div>
+
+:
+      <div class="glossary-term js-only" style="visibility: visible;">
+  <a class="glossary-link js">DNS credentials</a>
+  <div class="tooltip js">
+    <div class="close-button"><img alt="Close button" class="close-tooltip" src="./Certbot Instructions _ Certbot_files/close-d50a57de0821395c65cd8330305a71fa397a0a8dc4eaed6aa367ae13eca315d8.svg"></div>
+    <div class="tooltip-title">
+      <a href="https://certbot.eff.org/glossary#dns-credentials">DNS Credentials</a>
+    </div>
+    <div class="mobile-hidden">
+      <p>DNS credentials are a password or other kind of secret (such as an API key) that your DNS provider lets you use to change the contents of your DNS records. They are usually issued by your domain registrar (or by another DNS provider, if your DNS provider isn’t the same as your registrar). DNS credentials are a sensitive kind of secret because they can be used to take over your site completely.
+You should never share these credentials publicly or with an unauthorized person. It can be OK to provide a copy of them to Certbot to let it perform DNS validation automatically, since it runs locally on your machine.</p>
+
+    </div>
+    <div class="mobile-only">
+      <p>DNS credentials are a password or other kind of secret (such as an API key) that your DNS provider l...</p>
+    </div>
+    <div class="bottom-text">
+      <a href="https://certbot.eff.org/glossary">From our Certbot Glossary</a>
+    </div>
+  </div>
+</div>
+
+
+    </span>
+  </div>
+</div>
+
+  </div>
+
+  <div class="mobile-hidden">
+    <h1> Don't have these requirements? </h1>
+    <p>
+    Not to worry! Some hosting providers automate the HTTPS process.
+    <a href="https://certbot.eff.org/hosting_providers">See the full list of hosting providers</a>
+    , or
+    <a href="https://certbot.eff.org/pages/help#webserver">find out more about how to set up your system</a>.
+    </p>
+  </div>
+</div>
+
+          <div class="instruction-pane automated">
+            <ol>
+                <aside class="note docker-note">
+  <div class="note-header">
+    <h3>Snap Support</h3>
+  </div>
+  <p>The Certbot snap supports the x86_64, ARMv7, and ARMv8 architectures. While we strongly recommend that most users install Certbot through the snap, you can find alternate installation instructions <a href="https://certbot.eff.org/docs/install.html">here</a>.</p>
+
+</aside>
+
+                <li>
+  SSH into the server
+  <p>SSH into the server running your HTTP website as a user with sudo privileges.</p>
+
+</li>
+
+                <li>
+  Install snapd
+  <p>You'll need to install snapd and make sure you follow any instructions to enable classic snap support.</p>
+
+<p>Follow these instructions on <a href="https://snapcraft.io/docs/installing-snapd/">snapcraft's site to install snapd</a>.</p>
+
+<div class="link-button-wrapper"><a href="https://snapcraft.io/docs/installing-snapd/">install snapd</a>
+</div>
+
+</li>
+
+                <li>
+  Ensure that your version of snapd is up to date
+  <p>Execute the following instructions on the command line on the machine to ensure that you have the latest version of <code>snapd</code>.</p>
+<pre>sudo snap install core; sudo snap refresh core</pre>
+</li>
+
+                <li>
+  Remove certbot-auto and any Certbot OS packages
+  <p>If you have any Certbot packages installed using an OS package manager like
+<code>apt</code>, <code>dnf</code>, or <code>yum</code>, you should remove them before installing the Certbot snap to ensure that when you run the command <code>certbot</code> the snap is used rather than the installation from your OS
+package manager. The exact command to do this depends on your OS, but
+common examples are <code>sudo apt-get remove certbot</code>, <code>sudo dnf
+remove certbot</code>, or <code>sudo yum remove certbot</code>.</p>
+
+</li>
+
+                <li>
+  Install Certbot
+  <p>Run this command on the command line on the machine to install Certbot.</p>
+<pre>sudo snap install --classic certbot</pre>
+</li>
+
+                <li>
+  Prepare the Certbot command
+  <p>Execute the following instruction on the command line on the machine to ensure that the <code>certbot</code> command can be run.</p>
+<pre>sudo ln -s /snap/bin/certbot /usr/bin/certbot</pre>
+</li>
+
+                <li>
+  Choose how you'd like to run Certbot
+  <h3>Either get and install your certificates...</h3>
+
+<p>Run this command to get a certificate and have Certbot edit your apache configuration automatically to serve it, turning on HTTPS access in a single step.</p>
+<pre>sudo certbot --apache</pre>
+<h3>Or, just get a certificate</h3>
+
+<p>If you're feeling more conservative and would like to make the changes to your apache configuration by hand, run this command.</p>
+<pre>sudo certbot certonly --apache</pre>
+</li>
+
+                <li>
+  Test automatic renewal
+  <p>The Certbot packages on your system come with a cron job or systemd timer that will renew your certificates automatically before they expire. You will not need to run Certbot again, unless you change your configuration. You can test automatic renewal for your certificates by running this command:</p>
+<pre>sudo certbot renew --dry-run</pre>
+<p>The command to renew certbot is installed in one of the following locations:</p>
+
+<ul>
+<li><code>/etc/crontab/</code></li>
+<li><code>/etc/cron.*/*</code></li>
+<li><code>systemctl list-timers</code></li>
+</ul>
+
+</li>
+
+                <li>
+  Confirm that Certbot worked
+  <p>To confirm that your site is set up properly, visit <code>https://yourwebsite.com/</code> in your browser and look for the lock icon in the URL bar.</p>
+
+</li>
+
+            </ol>
+          </div>
+          <div class="instruction-pane advanced">
+            <ol>
+                <aside class="note docker-note">
+  <div class="note-header">
+    <h3>Snap Support</h3>
+  </div>
+  <p>The Certbot snap supports the x86_64, ARMv7, and ARMv8 architectures. While we strongly recommend that most users install Certbot through the snap, you can find alternate installation instructions <a href="https://certbot.eff.org/docs/install.html">here</a>.</p>
+
+</aside>
+
+                <li>
+  Check if your DNS provider is supported
+  <p>See if your DNS provider is supported by Certbot by checking this list in our <a href="https://certbot.eff.org/docs/using.html#dns-plugins">documentation</a>. </p>
+
+<div class="link-button-wrapper"><a href="https://certbot.eff.org/docs/using.html#dns-plugins">check if your DNS provider supports Certbot</a>
+</div>
+
+<h3>Not supported?</h3>
+
+<p>If your DNS provider is not supported, pause here: run Certbot with the manual plugin by using <a href="https://certbot.eff.org/docs/using.html#manual">these steps from our documentation</a>.</p>
+
+<h3>Supported?</h3>
+
+<p>If your DNS provider is supported, continue with the remaining instructions below.</p>
+
+</li>
+
+                <li>
+  SSH into the server
+  <p>SSH into the server running your HTTP website as a user with sudo privileges.</p>
+
+</li>
+
+                <li>
+  Install snapd
+  <p>You'll need to install snapd and make sure you follow any instructions to enable classic snap support.</p>
+
+<p>Follow these instructions on <a href="https://snapcraft.io/docs/installing-snapd/">snapcraft's site to install snapd</a>.</p>
+
+<div class="link-button-wrapper"><a href="https://snapcraft.io/docs/installing-snapd/">install snapd</a>
+</div>
+
+</li>
+
+                <li>
+  Ensure that your version of snapd is up to date
+  <p>Execute the following instructions on the command line on the machine to ensure that you have the latest version of <code>snapd</code>.</p>
+<pre>sudo snap install core; sudo snap refresh core</pre>
+</li>
+
+                <li>
+  Remove certbot-auto and any Certbot OS packages
+  <p>If you have any Certbot packages installed using an OS package manager like
+<code>apt</code>, <code>dnf</code>, or <code>yum</code>, you should remove them before installing the Certbot snap to ensure that when you run the command <code>certbot</code> the snap is used rather than the installation from your OS
+package manager. The exact command to do this depends on your OS, but
+common examples are <code>sudo apt-get remove certbot</code>, <code>sudo dnf
+remove certbot</code>, or <code>sudo yum remove certbot</code>.</p>
+
+</li>
+
+                <li>
+  Install Certbot
+  <p>Run this command on the command line on the machine to install Certbot.</p>
+<pre>sudo snap install --classic certbot</pre>
+</li>
+
+                <li>
+  Prepare the Certbot command
+  <p>Execute the following instruction on the command line on the machine to ensure that the <code>certbot</code> command can be run.</p>
+<pre>sudo ln -s /snap/bin/certbot /usr/bin/certbot</pre>
+</li>
+
+                <li>
+  Confirm plugin containment level
+  <p>Run this command on the command line on the machine to acknowledge that the installed plugin will have the same <code>classic</code> containment as the Certbot snap.</p>
+<pre>sudo snap set certbot trust-plugin-with-root=ok</pre>
+<p>If you encounter issues with running Certbot, you may need to follow this step, then the "Install correct DNS plugin" step, again.</p>
+
+</li>
+
+                <li>
+  Install correct DNS plugin
+  <p>Run the following command, replacing &lt;PLUGIN&gt; with the name of your DNS provider.</p>
+<pre>sudo snap install certbot-dns-&lt;PLUGIN&gt;</pre>
+<p>For example, if your DNS provider is Cloudflare, you'd run the following command:</p>
+<pre>sudo snap install certbot-dns-cloudflare</pre>
+</li>
+
+                <li>
+  Set up credentials
+  <p>You'll need to set up DNS credentials.</p>
+
+<p>Follow the steps in the "Credentials" section for your DNS provider to access or create the appropriate credential configuration file. Find credentials instructions for your DNS provider by clicking the <a href="https://certbot.eff.org/docs/using.html#dns-plugins">DNS plugin's name on the Documentation list</a>.</p>
+
+<div class="link-button-wrapper"><a href="https://certbot.eff.org/docs/using.html#dns-plugins">find your DNS plugin's Credential steps</a>
+</div>
+
+</li>
+
+                <li>
+  Choose how you'd like to run Certbot
+  <h3>Either get and install your certificates...</h3>
+
+<p>Run one of the commands in the "Examples" section of the <a href="https://certbot.eff.org/docs/using.html#dns-plugins&#39;">instructions for your DNS provider</a>, along with the flag <code>-i apache</code>.</p>
+
+<h3>Or, just get a certificate</h3>
+
+<p>Run one of the commands in the "Examples" section of the <a href="https://certbot.eff.org/docs/using.html#dns-plugins&#39;">instructions for your DNS provider</a>.</p>
+
+</li>
+
+                <li>
+  Test automatic renewal
+  <p>The Certbot packages on your system come with a cron job or systemd timer that will renew your certificates automatically before they expire. You will not need to run Certbot again, unless you change your configuration. You can test automatic renewal for your certificates by running this command:</p>
+<pre>sudo certbot renew --dry-run</pre>
+<p>The command to renew certbot is installed in one of the following locations:</p>
+
+<ul>
+<li><code>/etc/crontab/</code></li>
+<li><code>/etc/cron.*/*</code></li>
+<li><code>systemctl list-timers</code></li>
+</ul>
+
+</li>
+
+                <li>
+  Confirm that Certbot worked
+  <p>To confirm that your site is set up properly, visit <code>https://yourwebsite.com/</code> in your browser and look for the lock icon in the URL bar.</p>
+
+</li>
+
+            </ol>
+          </div>
+          <div class="instructions-footer">
+            <div class="col">
+              <img alt="Lightbulb" src="./Certbot Instructions _ Certbot_files/BlackCircle-Lightbulb-825c9e46d941b97a66391c8f6a756caf126640322484f9d27909795fa31b8de1.svg">
+              <div class="text-wrapper">
+                <span>
+                  Troubleshooting?<br class="mobile-hidden">
+                  Encountering an error?
+                </span>
+              </div>
+              <a class="link-button-wide" href="https://certbot.eff.org/pages/help">
+                Get help<img alt="Red arrow pointing right" class="mobile-only link-arrow" src="./Certbot Instructions _ Certbot_files/chevron-right-3e59e02946d48646a89c8c5c6d5531ba3e01c8aa583d4acaf2c556e76cf53087.png">
+</a>            </div>
+            <div class="col">
+              <img alt="Gear" src="./Certbot Instructions _ Certbot_files/BlackCircle-Gear-2a581883c2ad1b30f42aba0c7cd7e406f2927efe934f93a0c347a1d6ed6b683f.svg">
+              <div class="text-wrapper">
+                <span>
+                  Need more options to customize your setup?
+                </span>
+              </div>
+              <a class="link-button-wide" href="https://certbot.eff.org/docs">
+                See how to work with Certbot<img alt="Red arrow pointing right" class="mobile-only link-arrow" src="./Certbot Instructions _ Certbot_files/chevron-right-3e59e02946d48646a89c8c5c6d5531ba3e01c8aa583d4acaf2c556e76cf53087.png">
+</a>            </div>
+            <div class="col">
+              <img alt="Bag decorated with a heart" src="./Certbot Instructions _ Certbot_files/BlackCircle-Donate-c2a2f70770f2491e1cacb0aa781ca0f2194e5433df4e7d154b50b1c0da11c635.svg">
+              <div class="text-wrapper">
+                <span class="mobile-hidden">
+                  Like Certbot? This free, open source project is part of EFF's
+                  commitment to make encryption accessible for all.
+                </span>
+                <span class="mobile-only">
+                  Like Certbot?
+                </span>
+              </div>
+              <a class="link-button-wide" href="https://supporters.eff.org/donate/support-work-on-certbot">Donate to Certbot and EFF<img alt="Red arrow pointing right" class="mobile-only link-arrow" src="./Certbot Instructions _ Certbot_files/chevron-right-3e59e02946d48646a89c8c5c6d5531ba3e01c8aa583d4acaf2c556e76cf53087.png"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <footer class="social">
+  <ul>
+    <li>
+      <a href="https://www.facebook.com/share.php?u=https%3A%2F%2Fcertbot.eff.org&amp;title=Certbot" target="_blank" rel="noreferrer"><div class="social-icon facebook"></div></a>
+    </li>
+    <li><a href="https://twitter.com/intent/tweet?text=Check%20out%20Certbot%2C%20an%20%40EFF%20tool%20that%20makes%20it%20easy%20to%20get%20and%20configure%20HTTPS%20with%20Let%27s%20Encrypt%20certificates&amp;url=https%3A%2F%2Fcertbot.eff.org&amp;related=eff" target="_blank" rel="noreferrer"><div class="social-icon twitter"></div></a></li>
+    <li><a href="https://supporters.eff.org/donate/support-work-on-certbot" target="_blank" rel="noreferrer"><div class="social-icon donate"></div></a></li>
+  </ul>
+</footer>
+
+  <footer class="footer">
+
+  <div class="logos">
+    <div class="certbot-logo">
+      <img alt="Certbot logo" class="certbot-logo" src="./Certbot Instructions _ Certbot_files/Certbot-solid-c4e500f9953fc8ee1d38cb0b22778163602a82cb2b39a5bc89211315c5c877c9.svg">
+      <span>
+        certbot
+      </span>
+    </div>
+    <a target="_blank" href="https://www.eff.org/"><img alt="Electronic Frontier Foundation" class="eff-logo" src="./Certbot Instructions _ Certbot_files/EFF-bw-logo-white-a9088a45f4321a0474da9405f4df79240552f224c6b60a09769f26b7fa90815e.svg"></a>
+  </div>
+
+  <div class="links">
+    <ul>
+      <li><a href="https://certbot.eff.org/">home</a></li>
+      <li><a href="https://certbot.eff.org/pages/about">about certbot</a></li>
+      <li><a href="https://certbot.eff.org/instructions">certbot instructions</a></li>
+      <li><a href="https://certbot.eff.org/hosting_providers">hosting providers with HTTPS</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="https://certbot.eff.org/pages/help">get help</a></li>
+      <li><a href="https://certbot.eff.org/faq">frequently asked questions</a></li>
+      <li><a href="https://certbot.eff.org/glossary">certbot glossary</a></li>
+      <li><a href="https://certbot.eff.org/docs">certbot documentation</a></li>
+      <li><a href="https://community.letsencrypt.org/">community forum</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="https://certbot.eff.org/pages/help#not-finding">contact us</a></li>
+      <li><a href="https://certbot.eff.org/pages/contribute">contribute to certbot</a></li>
+    </ul>
+
+    <ul>
+      <li><a target="_blank" href="https://supporters.eff.org/donate/support-work-on-certbot">donate to EFF</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="https://certbot.eff.org/pages/privacy">privacy</a></li>
+      <li><a target="_blank" href="https://www.eff.org/copyright"><img alt="Creative Commons Attribution License" src="./Certbot Instructions _ Certbot_files/cc-by-logo-fb231f81e78479f46ff4fad6ddfc970b5a7cca16ec32a993bdc4b5d85198e980.png"></a></li>
+    </ul>
+  </div>
+
+  <noscript><img src="https://anon-stats.eff.org/js/?idsite=24&amp;rec=1&amp;action_name=" style="border:0" height="0" width="0" alt="" /></noscript>
+  <div style="height: 0; width: 0; position: absolute" id="anon-stats"><img src="./Certbot Instructions _ Certbot_files/saved_resource" style="border:0" height="0" width="0" alt=""></div>
+  <script type="text/javascript">
+    document.getElementById('anon-stats').innerHTML = '<img src="https://anon-stats.eff.org/js/?idsite=24&amp;rec=1&amp;urlref=' + encodeURIComponent(document.referrer) + '&amp;action_name=' + encodeURIComponent(document.title) + '" style="border:0" height="0" width="0" alt="" />';
+  </script>
+
+</footer>
+
+
+
+  <script type="importmap" data-turbo-track="reload">{
+  "imports": {
+    "jquery": "/assets/jquery-dffa084d8915bf507ac4c876f4dedea0cab68baacd9266ff82a66706ef56f264.js",
+    "toastui-editor": "/assets/toastui-editor-b824a348e845a818ec06beadd61d1d53a267dd434b98e5fb02c9a80852b52ba2.js",
+    "ckeditor/ckeditor": "/assets/ckeditor/ckeditor-53b7205163eeca5b511b43e34f1df6b2b0b401d11cf2c6884adfbbc4150c2881.js",
+    "sortable": "/assets/sortable-37be89ef017d92ccb51699051b444072861ad6d6593081f9935b43c601d955b6.js",
+    "railsujs": "/assets/railsujs-57c6effce760f866866bfa973534bccaa9f2ae315c8a64066bad179fa22bce0f.js",
+    "select2/select2": "/assets/select2/select2-f79333530e65fc28b0339227e71cfc769d0229c39d7b2955c6045ad5e4f15f65.js",
+    "jquery-ui/jquery-ui": "/assets/jquery-ui/jquery-ui-0507eea9215b37aa68aced7033f3f0919a5f17b9a8c1ac7308e0fba7fd11e3bd.js",
+    "datatables.net": "/assets/datatables.net-0f394ccc57627c8f9eb6e629fe6db7e959b2cc5d2819e95f0d7fe2ba83dec8b0.js",
+    "application": "/assets/application-5c1cffe7a94c2d0867439ff244bd027f9b27d0ae87812e9e69be88842993e868.js",
+    "cms": "/assets/cms-f4829baf3871395a5f3f83a2120e90fc9f4987952bb1cb72ee500d6b2f79f7f5.js",
+    "ckeditor/otters-ckeditor": "/assets/ckeditor/otters-ckeditor-0f17142634aae1eafdf7d5b75cb0d1d0868635be15f478de33af814239c8dcd1.js",
+    "otters/cms": "/assets/otters/cms-ec2adeabbbeed4789f954f15eb2d798a12b86c981032818ea1815363e662821c.js",
+    "otters/cms/manual": "/assets/otters/cms/manual-a714e395d9a870f71e6ca4a30180e6ab55d91ba0c17058d15329fe8416359af3.js",
+    "otters/cms/node_select": "/assets/otters/cms/node_select-7469d305a03d8978b6ef40acc4d2e9c47e4db03dec715b82403bbeedf84b423a.js",
+    "otters/cms/menus": "/assets/otters/cms/menus-ad12efdb32629c83b5cd9c5154a7ddade1efed5640bc8ddb9ba819332cf309bb.js",
+    "efforg/cms": "/assets/efforg/cms-8e6c351a16668fe27601a562dcef4d608e38a9fadd1ae57d45a575ec1f35ab12.js",
+    "efforg/application": "/assets/efforg/application-17440bb0f83ef30483503814976f91b12a56e4015f179d060f215636a794a0d3.js",
+    "application/instructions": "/assets/application/instructions-cd70d858f72109eaa991e83668aac8cf88fbce32468d4df443bc3c33345f9d4e.js",
+    "application/tooltip": "/assets/application/tooltip-f211a9e404dd012268b34283c1d2d750e2b08c899df4d3b855654ea429e4d568.js",
+    "application/hosting_providers": "/assets/application/hosting_providers-b53b6d191c1a3452a02f27ddc11b4a4abbcf4cdd63f2374907aa8d2de4094e19.js",
+    "application/main": "/assets/application/main-e0b2754d9f231defa87e0e139d038c9539470ff377d8c995af101b035b0214b4.js",
+    "cms/editor": "/assets/cms/editor-e58b198e76f4d4f32b712bc8a17a55a441a09bdd02eb0f87921fa6a08c8b3b99.js",
+    "cms/pages": "/assets/cms/pages-3af484f98f29cd0e2cf0744ac6b2367bb419971a748c04bc883b30f67deeab75.js"
+  }
+}</script>
+
+<script src="./Certbot Instructions _ Certbot_files/es-module-shims.min-d89e73202ec09dede55fb74115af9c5f9f2bb965433de1c2446e1faa6dac2470.js.download" async="async" data-turbo-track="reload"></script>
+<script type="module">import "application"</script>
+
+
+<div id="torrent-scanner-popup" style="display: none;"><template shadowrootmode="open"><link rel="stylesheet" href="chrome-extension://aegnopegbbhjeeiganiajffnalhlkkjb/css/custom.css"><div id="yf-bt-wrapper" class="free"><div class="header"><img class="sts-logo" src="chrome-extension://aegnopegbbhjeeiganiajffnalhlkkjb/img/assets/ts-free-logo.png"><div class="search-content"><input id="search-input" class="search-input" type="search" placeholder="Start your search here..."><span id="search-btn" class="search-btn"></span></div></div><div class="container"><div class="main-container"><div id="torrent-data" class="torrent-content"><div class="t-table"><div class="t-header"><div class="t-name">Torrent search results</div></div><div id="checked-sites" class="checked-sites-section"><div class="left">Checked Sites</div><div class="right"><span id="sites-count" class="sites-count">0</span></div></div><div id="table-body" class="t-body"><div id="loading" class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="table-message-container" id="table-message"><p>No items to list <br> Use the search bar above for instant results</p></div></div></div></div><div class="tooltip"><p class="tooltip-text">To see search results, type here and hit `Enter`</p></div><div class="footer"><span><span id="numberScanned" class="numberScanned">No results</span></span></div><div class="upgradeProPanel"><div class="upgradeProPanelTitle">Try our Pro Versions to unlock:</div><div class="upgradeProPanelList"><div><p>Faster Results</p></div><div><p>Secure Torrenting</p></div><div><p>Unlimited Search Results with detailed torrent info</p></div><div><p>1-YR Subscription to CyberGhost VPN <span style="font-size:8px;">(PRO+VPN only)</span></p></div></div><a class="upgrade-to-pro-button-2" id="buy-pro-vpn" href="https://www.utorrent.com/webpro-offer/?utm_source=Lavasoft&amp;utm_medium=version_1.0&amp;utm_campaign=Scanner" target="_blank">BUY PRO + VPN</a><a class="upgrade-to-pro-button-2" id="buy-pro" href="https://www.utorrent.com/webpro-offer/?utm_source=Lavasoft&amp;utm_medium=version_1.0&amp;utm_campaign=Scanner" target="_blank">BUY PRO</a></div></div><div class="sync-container nav-se-container"><div class="nav-se-content"><img class="sync-icon nav-se-icon" src="chrome-extension://aegnopegbbhjeeiganiajffnalhlkkjb/img/assets/icon-sync.svg"><div class="nav-se-title">One more step to go before you start torrenting!</div><p class="nav-se-text">This extension can sync results with BitTorrent and/or uTorrent for instant downloading.</p><p class="nav-se-text">To activate this feature, please click on the button below, and then on the Chrome message to activate the 'Messaging Permission'.</p><button class="sync-permission-btn nav-se-btn">Activate Messaging Permission</button></div><div class="nav-se-content display-none"><img class="sync-icon nav-se-icon" src="chrome-extension://aegnopegbbhjeeiganiajffnalhlkkjb/img/assets/icon-sync.svg"><div class="nav-se-title">Syncing...</div><p class="nav-se-text">Please allow Messaging Permissions in the proceeding Chrome message.</p></div><div class="nav-se-content display-none"><img class="sync-icon nav-se-icon" src="chrome-extension://aegnopegbbhjeeiganiajffnalhlkkjb/img/assets/icon-success.svg"><div class="nav-se-title">Sync Complete</div><p class="nav-se-text">You have successfully activated the “Messaging Permission” feature. All your search results will sync with BitTorrent and/or uTorrent.</p></div></div><div class="license-container nav-se-container"><div class="nav-se-content"><img class="nav-se-icon" src="chrome-extension://aegnopegbbhjeeiganiajffnalhlkkjb/img/assets/icon-key2.svg"><div class="nav-se-title">Enter License Key</div><p class="nav-se-text">Enter your license key and click on the activate button to start using <span>µTorrent Web Pro.</span></p><input type="text" id="license-input-key" class="license-input-key" placeholder="Enter Key"><div class="license-spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><button id="license-activate-button" class="license-activate-button nav-se-btn">Activate</button><p>Don't have a license key? <a class="license-buy-link" target="_blank">Click here</a></p></div><div class="nav-se-content display-none"><img class="nav-se-icon" src="chrome-extension://aegnopegbbhjeeiganiajffnalhlkkjb/img/assets/icon-success.svg"><div class="nav-se-title">Happy Torrenting!</div><p class="nav-se-text">You are now an active PRO user</p><p class="nav-se-text">Your key is valid until <span class="expiry-date"></span></p></div><div class="nav-se-content display-none"><img class="nav-se-icon" src="chrome-extension://aegnopegbbhjeeiganiajffnalhlkkjb/img/assets/icon-alert.svg"><div class="nav-se-title">Your license key has expired</div><p class="nav-se-text">Looks like your license key has expired, to renew your PRO license key, please select a license type:</p><a class="upgrade-to-pro-button-2 buy-license-expiry-button" href="https://www.utorrent.com/webpro-offer/?utm_source=Lavasoft&amp;utm_medium=version_1.0&amp;utm_campaign=Scanner" target="_blank">Buy Pro + VPN</a><a class="upgrade-to-pro-button-2 buy-license-expiry-button" href="https://www.utorrent.com/webpro-offer/?utm_source=Lavasoft&amp;utm_medium=version_1.0&amp;utm_campaign=Scanner" target="_blank">Buy Pro</a><p class="nav-se-text">Already have a license key? <a class="link" id="show-license-panel">Click here</a></p></div><div class="nav-se-content display-none"><img class="nav-se-icon" src="chrome-extension://aegnopegbbhjeeiganiajffnalhlkkjb/img/assets/icon-success.svg"><div class="nav-se-title">Pro User</div><p class="nav-se-text">Your key is valid until <span class="expiry-date"></span></p><p class="nav-se-text">Your License Key:</p><p class="nav-se-text"></p><p class="nav-se-text margin-top-50">Switch back to Torrent Scanner Free?</p><button class="activate-free-btn nav-se-btn">Revert to Free Version</button></div></div><div class="feedback-container nav-se-container"><div class="nav-se-content"><img class="nav-se-icon" src="chrome-extension://aegnopegbbhjeeiganiajffnalhlkkjb/img/assets/icon-feedback.svg"><div class="nav-se-title">Feedback</div><p class="nav-se-text">Help us improve Torrent Scanner, send us comments, bugs, feedback, and suggestions.</p><button id="feedback-button" class="feedback-button nav-se-btn">Send Feedback</button></div></div><div class="settings-container nav-se-container"><div class="nav-se-content"><div class="settings-title">Settings</div></div><div class="s-table"><div class="s-row"><div class="s-title">FAQ<div class="s-arrow"><span class="arrow-down"></span></div></div><div class="s-content faq-content"><p class="faq-text">FAQ: <a href="chrome-extension://aegnopegbbhjeeiganiajffnalhlkkjb/faq.html" target="_blank">Click here</a></p></div></div><div class="s-row"><div class="s-title">Rate the extension<div class="s-arrow"><span class="arrow-down"></span></div></div><div class="s-content"><p class="rate-text">How did you like the extension experience?</p><div class="rating"><span class="rating-star">★</span><span class="rating-star">★</span><span class="rating-star">★</span><span class="rating-star">★</span><span class="rating-star">★</span></div><button class="rating-btn nav-se-btn" disabled="">Submit</button></div></div><div class="s-row"><div class="s-title">About<div class="s-arrow"><span class="arrow-down"></span></div></div><div class="s-content about-content"><div class="about-version">Version 1.3.0 <br><br> What's New</div><div class="about-new"><p></p><ul><li>Experience a complete new User Interface of the extension. It is enhanced and user friendly now.</li><li>Squashed some bugs.</li></ul><p></p></div></div></div><div class="s-row"><div class="s-title">Privacy Policy<div class="s-arrow"><span class="arrow-down"></span></div></div><div class="s-content"><div class="policy-text">Adaware Software (7270356 Canada Inc.) is the operator of the Adaware products suites and related services (the “<b>Company</b>”, ”<b>we</b>” or “<b>us</b>”). We respect your privacy rights and we are committed to protecting them. This privacy policy (“<b>Privacy Policy</b>” or simply “<b>policy</b>”) governs our products, services and websites that link to this Privacy Policy, and describes our practices of processing data from you. By “<b>you</b>”, we refer to either or all of the following: (i) visitors to our websites that links to this Privacy Policy (“<b>Visitor</b>” and “<b>Website</b>”, respectively); (ii) our customers using our software products and Services (“<b>User</b>”); and (c) a business customer, a business partner that has a contractual relationship with us or a prospective customer that is yet to be engaged in a contract with us (“Business Customer”). Unless explicitly mentioned otherwise, the information in this Privacy Policy refers to any and all data subject types (“you” or “your’). <br><br> For the purpose of this policy, the “<b>Service(s)</b>” shall include any software licensed by the Company, including features offered by or within the installed software or additional software scripts available therein (either downloaded from one of our websites, pre-installed on your device, downloaded through a third party website, obtained on a physical medium, or otherwise), or services provided through and/or on top such software, services offered on our websites, communication forums, support services, account operation, updates, enhancements, new features, premium support, extended guarantees, online version and free versions of a software or additional services or features as we ay make available from time to time. <br><br> If you are a California resident, please also see our <a href="https://www.adaware.com/CCPA/" target="_blank">CCPA Notice</a>. <br><br> <a href="https://www.adaware.com/privacy-policy/" target="_blank">Read more</a></div></div></div><div class="s-row" style="display: none;"><div class="s-title">Contact Us<div class="s-arrow"><span class="arrow-down"></span></div></div><div class="s-content"><div class="contact-text">For any payment and order-related support, please contact us at Email: <a href="mailto:support@torrentscanner.zendesk.com">support@torrentscanner.zendesk.com</a> or <a href="mailto:pcsoftwareinfo.com">pcsoftwareinfo.com</a><br><br>Phone: <a href="https://pcsoftwareinfo.com/contact.aspx" target="_blank">Click here</a></div></div></div></div></div></div><div class="nav"><button id="btnSync" class="nav-btn">Sync</button><button id="btnLicense" class="nav-btn">License</button><button id="btnHome" class="nav-btn">Home</button><button id="btnFeedback" class="nav-btn">Feedback</button><button id="btnSettings" class="nav-btn">Settings</button></div></div></template></div></body></html>
